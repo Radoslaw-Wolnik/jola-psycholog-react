@@ -23,7 +23,7 @@ const HelpSection = () => (
           {helpItems.map((item, index) => (
             <div
               key={index}
-              className="border-1 border-neutral-400 px-12 py-1 rounded-md text-lg hover:bg-neutral-100 transition mb-4 last:mb-0 text-center break-words"
+              className="border-1 border-black px-12 py-1 rounded-sm text-lg hover:bg-neutral-100 transition mb-4 last:mb-0 text-center break-words"
             >
               {item}
             </div>

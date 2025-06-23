@@ -1,8 +1,32 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  
+  const menuRef = useRef<HTMLDivElement | null>(null);
+
+
+  // Close mobile menu when clicking outside
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const handleClickOutside = (event: MouseEvent | TouchEvent) => {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target as Node)
+      ) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener('touchstart', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('touchstart', handleClickOutside);
+    };
+  }, [isOpen]);
+
   const navItems = [
     { name: 'O MNIE', id: 'about' },
     { name: 'OFERTA', id: 'services' },
@@ -18,14 +42,17 @@ const Header = () => {
         {/* Desktop Header */}
         <div className="hidden md:flex justify-between items-center py-4">
           {/* Left: Logo and Text */}
-          <div className="flex flex-col">
-            <div className="text-xl font-bold text-secondary flex items-center">
-              <div className="mr-2">W RELACJI</div>
-              <span className="text-sm font-normal text-dark ml-2 border-l border-gray-300 pl-2">
-                Jolanta Dminiak-Konderak
-              </span>
-            </div>
-            <div className="text-xl text-gray-500 mt-1">psycholog</div>
+          <div className="flex flex-row items-center gap-4" >
+            <img 
+              src="logo_only_horisontal.png" 
+              alt="W Realcji"
+              className="h-auto w-auto max-w-[160px]" // Adjust height as needed
+            />
+            <img 
+              src="jolanta.png" 
+              alt="Jolanta Dominiak-Konderak"
+              className="h-auto w-auto max-w-[160px]" // Adjust height as needed
+            />
           </div>
           
           {/* Right: Desktop Navigation - HORIZONTAL LAYOUT */}
@@ -49,7 +76,18 @@ const Header = () => {
         {/* Mobile Header */}
         <div className="md:hidden flex justify-between items-center py-4">
           {/* Left: Logo */}
-          <div className="text-xl font-bold text-secondary">RELACJI</div>
+          <div className="flex flex-row items-center gap-4" >
+            <img 
+              src="logo_only_horisontal.png" 
+              alt="W Realcji"
+              className="h-auto w-auto max-w-[160px]" // Adjust height as needed
+            />
+            <img 
+              src="jolanta.png" 
+              alt="Jolanta Dominiak-Konderak"
+              className="h-auto w-auto max-w-[160px]" // Adjust height as needed
+            />
+          </div>
           
           {/* Right: Hamburger Menu */}
           <button 
@@ -67,29 +105,30 @@ const Header = () => {
         </div>
       </div>
       
-      {/* Mobile Navigation Dropdown */}
-      {isOpen && (
-        <div 
-          className="md:hidden fixed top-0 left-0 right-0 bg-white shadow-lg z-40 overflow-y-auto"
-          style={{ maxHeight: '30vh' }}
-        >
-          <nav className="py-4 ">
-            <ul className="px-4 gap-2 flex flex-col items-center">
-              {navItems.map((item) => (
-                <li key={item.id}>
-                  <a 
-                    href={`#${item.id}`}
-                    className="block text-dark hover:text-primary transition-colors font-medium py-1"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {item.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
-      )}
+      {/* Mobile menu dropdown */}
+      <div
+        ref={menuRef}
+        className={`md:hidden fixed top-0 left-0 right-0 bg-white shadow-lg z-40 transform transition-all origin-top duration-300 ease-in-out ${
+          isOpen ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0 pointer-events-none'
+        }`}
+        style={{ transformOrigin: 'top' }}
+      >
+        <nav className="py-4">
+          <ul className="px-4 gap-2 flex flex-col items-center">
+            {navItems.map(item => (
+              <li key={item.id}>
+                <a
+                  href={`#${item.id}`}
+                  className="block text-dark hover:text-primary transition-colors font-medium py-1"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 };

@@ -19,19 +19,19 @@ const OfficeSection = () => (
         </p>
       </div>
       
-      <div className="grid md:grid-cols-3 gap-8 mt-12">
+      <div className="grid sm:grid-cols-3 gap-8 mt-12 text-center">
         <div>
           <h3 className="text-xl font-bold text-secondary mb-3">INTERNET</h3>
           <p>Aby nasze spotkania były możliwe potrzebujesz dobre połączenie internetowe.</p>
         </div>
         
         <div>
-          <h3 className="text-xl font-bold text-secondary mb-3">URZĄDZENIE</h3>
+          <h3 className="text-xl font-bold text-secondary mb-3 text-center">URZĄDZENIE</h3>
           <p>Możesz się połączyć z dowolnego urządzenia. Sprawdź swoją kamerę oraz słuchawki żebyśmy się mogli widzieć i słyszeć.</p>
         </div>
         
         <div>
-          <h3 className="text-xl font-bold text-secondary mb-3">PRZESTRZEŃ</h3>
+          <h3 className="text-xl font-bold text-secondary mb-3 text-center">PRZESTRZEŃ</h3>
           <p>Zadbaj o prywatną przestrzeń bez dystraktorów, by czuć się swobodnie z kubkiem herbaty czy kawy.</p>
         </div>
       </div>

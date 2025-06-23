@@ -30,6 +30,10 @@ const config: Config = {
           md: '2rem',
         },
       },
+      scale: {
+        '0': '0',
+        '100': '1',
+      },
     },
   },
   plugins: [],

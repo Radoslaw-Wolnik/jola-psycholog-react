@@ -2,34 +2,46 @@
 import Section from './Section.tsx';
 
 const AboutSection = () => (
-  <Section id="about" title="O MNIE">
-    <div className="text-center mb-8">
-      <h1 className="text-4xl font-bold text-secondary mb-4">
-        Jolanta Dominiak-Konderak
-      </h1>
-      <p className="text-xl text-accent font-semibold">psycholożka</p>
-    </div>
+  <Section id="about" title="O MNIE" >
 
-    <blockquote className="italic text-lg text-center mb-8 text-dark max-w-2xl mx-auto">
-      "Wierzę, że każdy z Nas ma w sobie zasoby, by odnaleźć drogę do własnego 
-      dobrostanu. Moją rolą jest towarzyszenie Ci w tej podróży – bez oceniania, 
-      z pełną akceptacją i uważnością na to, kim jesteś."
-    </blockquote>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 items-center w-auto">
+      {/* Image */}
+      <div className="flex justify-center md:justify-start">
+        <img 
+          src="jola_portret.jpg" 
+          alt="Zdjęcie Joli na fotelu"
+          className="w-2/3  sm:w-auto h-auto rounded-2xl" 
+        />
+      </div>
 
-    <div className="prose prose-lg max-w-none text-dark">
-      <p>
-        Jestem psycholożką, absolwentką psychologii Uniwersytetu Opolskiego 
-        o specjalności klinicznej człowieka dorosłego. W toku studiów oraz dalszej 
-        edukacji zdobyłam wymagane kompetencje do pracy w obszarze pomocy oraz 
-        diagnozy psychologicznej.
-      </p>
-      <p>
-        Ukończyłam także kurs Racjonalnej Terapii Zachowania oraz Interwencji 
-        Kryzysowej, co pozwala mi prowadzić interwencje dla osób w trudnych 
-        momentach życiowych. Towarzyszyłam również pacjentom z doświadczeniem 
-        choroby onkologicznej, wspierając ich w momencie kryzysu. Ponadto, 
-        pracuję w Centrum Zdrowia Psychicznego w Knurowie.
-      </p>
+      {/* Heading */}
+      <div className="text-center md:text-left flex flex-col justify-center">
+        <h1 className="text-2xl md:text-4xl font-bold text-secondary">
+          Nazywam się Jolanta Dominiak-Konderak<br /> jestem psycholożką
+        </h1>
+        <blockquote className="italic text-lg text-center md:text-left mb-4 text-dark">
+          "Wierzę, że każdy z Nas ma w sobie zasoby, by odnaleźć drogę do własnego 
+          dobrostanu. Moją rolą jest towarzyszenie Ci w tej podróży – bez oceniania, 
+          z pełną akceptacją i uważnością na to, kim jesteś."
+        </blockquote>
+      </div>
+
+      {/* Main text */}
+      <div className="prose prose-lg max-w-none text-dark sm:col-span-2 md:col-span-1">
+        <p>
+          Jestem psycholożką, absolwentką psychologii Uniwersytetu Opolskiego 
+          o specjalności klinicznej człowieka dorosłego. W toku studiów oraz dalszej 
+          edukacji zdobyłam wymagane kompetencje do pracy w obszarze pomocy oraz 
+          diagnozy psychologicznej.
+        </p>
+        <p>
+          Ukończyłam także kurs Racjonalnej Terapii Zachowania oraz Interwencji 
+          Kryzysowej, co pozwala mi prowadzić interwencje dla osób w trudnych 
+          momentach życiowych. Towarzyszyłam również pacjentom z doświadczeniem 
+          choroby onkologicznej, wspierając ich w momencie kryzysu. Ponadto, 
+          pracuję w Centrum Zdrowia Psychicznego w Knurowie.
+        </p>
+      </div>
     </div>
   </Section>
 );

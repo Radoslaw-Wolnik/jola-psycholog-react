@@ -4,7 +4,7 @@ import Section from './Section.tsx';
 const PracticeSection = () => (
   <Section id="practice" title="PRAKTYKA">
     <div className="prose prose-lg max-w-none text-dark">
-      <p className="text-center font-semibold mb-8">
+      <p>
         Bazą jest bezpieczna relacja terapeutyczna.
       </p>
       
@@ -17,7 +17,7 @@ const PracticeSection = () => (
         badamy, jak wpływa ona na Twoje obecne wybory i sposób przeżywania rzeczywistości.
       </p>
       
-      <p>
+      <p className="mt-8">
         Jestem pełna ciekawości, jak przeszłe doświadczenia ukształtowały Ciebie i jak 
         możemy wspólnie nadać im kierunek, by stały się źródłem wzrostu oraz siły. 
         Wspólnie pracujemy na tym co dla Ciebie trudne, jak również wzmacniamy to co 
@@ -33,7 +33,7 @@ const PracticeSection = () => (
         klienta w drodze do odzyskania harmonii psychofizycznej.
       </p>
       
-      <p className="mt-8 font-semibold">
+      <p className="mt-8">
         Swoją pracę poddaje stałej superwizji. Kieruję się Kodeksem Etyczno-Zawodowym Psychologa.
       </p>
     </div>
