@@ -20,22 +20,22 @@ const Header = () => {
           {/* Left: Logo and Text */}
           <div className="flex flex-col">
             <div className="text-xl font-bold text-secondary flex items-center">
-              <div className="mr-2">RELACJI</div>
+              <div className="mr-2">W RELACJI</div>
               <span className="text-sm font-normal text-dark ml-2 border-l border-gray-300 pl-2">
-                Jolanta Odminiak Psycholog
+                Jolanta Dminiak-Konderak
               </span>
             </div>
-            <div className="text-xs text-gray-500 mt-1">konderak</div>
+            <div className="text-xl text-gray-500 mt-1">psycholog</div>
           </div>
           
           {/* Right: Desktop Navigation - HORIZONTAL LAYOUT */}
           <nav>
-            <ul className="flex flex-row flex-nowrap justify-end space-x-6 list-none p-0 m-0">
+            <ul className="flex flex-row flex-nowrap justify-end list-none p-0 m-0">
               {navItems.map(item => (
                 <li key={item.id}>
                   <a
                     href={`#${item.id}`}
-                    className="text-dark hover:text-primary transition-colors font-medium text-sm whitespace-nowrap"
+                    className="text-dark hover:text-primary transition-colors font-medium text-sm whitespace-nowrap px-2"
                   >
                     {item.name}
                   </a>
@@ -71,10 +71,10 @@ const Header = () => {
       {isOpen && (
         <div 
           className="md:hidden fixed top-0 left-0 right-0 bg-white shadow-lg z-40 overflow-y-auto"
-          style={{ maxHeight: '20vh' }}
+          style={{ maxHeight: '30vh' }}
         >
-          <nav className="py-4">
-            <ul className="space-y-3 px-4">
+          <nav className="py-4 ">
+            <ul className="px-4 gap-2 flex flex-col items-center">
               {navItems.map((item) => (
                 <li key={item.id}>
                   <a 

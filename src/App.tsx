@@ -21,9 +21,9 @@ const App: React.FC = () => {
         <OfficeSection />
         <ContactSection />
       </main>
-      <div className="!m-32 text-xl ">Test</div>
+
       <footer className="py-18 text-center text-muted text-sm">
-        <p className="text-2xl px-20">© {new Date().getFullYear()} Jolanta Dominiak-Konderak | Wszelkie prawa zastrzeżone</p>
+        <p className="px-20">© {new Date().getFullYear()} Jolanta Dominiak-Konderak | Wszelkie prawa zastrzeżone</p>
       </footer>
     </div>
   );

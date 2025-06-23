@@ -22,7 +22,14 @@ const config: Config = {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
         serif: ['Merriweather', 'serif']
-      }
+      },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: '1rem',
+          md: '2rem',
+        },
+      },
     },
   },
   plugins: [],

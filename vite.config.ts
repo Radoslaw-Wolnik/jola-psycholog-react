@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  
+  // css: { postcss: './postcss.config.js' }
 })
