@@ -1,10 +1,46 @@
 @import "tailwindcss";
 
+/* —————————————————————————————————————————————— */
+/*              Tailwind “theme” overrides        */
+/* —————————————————————————————————————————————— */
+@theme {
+  /* COLORS (snake_case → kebab-case) */
+  --color-black-p:          #253439;
+  --color-brown-h2:         #492D1A;
+  --color-background-main:  #F1EDE9;
+  --color-background-accent:#D9DFD6;
+
+  --color-card-one:         #F5F0DE;
+  --color-card-two:         #D2D2CA;
+  --color-card-three:       #D6D3B5;
+
+  /* FONT FAMILIES */
+  --font-headers: Cinzel, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-text:    "Lora", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  /* CONTAINER */
+  --container-center:       true;
+  --container-padding:      1rem;
+  --container-md-padding:   2rem;
+
+  /* SCALE */
+  --scale-0:   0;
+  --scale-100: 1;
+
+  /* BREAKPOINTS */
+  --breakpoint-xsm: 200px;
+}
+
 
 @layer base {
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 64px;
+  }
+
+  p {
+    font-family: var(--font-text);
+    color: var(--color-black-p)
   }
 
 }
