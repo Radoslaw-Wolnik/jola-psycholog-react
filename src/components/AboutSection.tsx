@@ -2,9 +2,9 @@
 import Section from './Section.tsx';
 
 const AboutSection = () => (
-  <Section id="about" title="O MNIE" >
+  <Section id="about" title="O MNIE" bgClassName="bg-background-main">
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 items-center w-auto">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 items-center w-auto">
       {/* Image */}
       <div className="flex justify-center md:justify-start">
         <img 
@@ -15,11 +15,11 @@ const AboutSection = () => (
       </div>
 
       {/* Heading */}
-      <div className="text-center md:text-left flex flex-col justify-center">
-        <h1 className="text-2xl md:text-4xl font-bold text-secondary">
+      <div className="text-center md:text-left flex flex-col justify-center gap-4">
+        <h1 className="text-2xl md:text-3xl font-bold text-secondary">
           Nazywam się Jolanta Dominiak-Konderak<br /> jestem psycholożką
         </h1>
-        <blockquote className="italic text-lg text-center md:text-left mb-4 text-dark">
+        <blockquote className="italic text-lg text-center md:text-left mb-4 text-dark font-text">
           "Wierzę, że każdy z Nas ma w sobie zasoby, by odnaleźć drogę do własnego 
           dobrostanu. Moją rolą jest towarzyszenie Ci w tej podróży – bez oceniania, 
           z pełną akceptacją i uważnością na to, kim jesteś."
@@ -27,7 +27,7 @@ const AboutSection = () => (
       </div>
 
       {/* Main text */}
-      <div className="prose prose-lg max-w-none text-dark sm:col-span-2 md:col-span-1">
+      <div className="prose prose-lg max-w-none text-dark sm:col-span-2 md:col-span-1 font-text">
         <p>
           Jestem psycholożką, absolwentką psychologii Uniwersytetu Opolskiego 
           o specjalności klinicznej człowieka dorosłego. W toku studiów oraz dalszej 

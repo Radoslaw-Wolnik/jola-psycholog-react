@@ -13,7 +13,7 @@ const App: React.FC = () => {
     <div className="min-h-screen bg-white">
       <Header />
       
-      <main>
+      <main className="">
         <AboutSection />
         <ServicesSection />
         <PracticeSection />
@@ -22,7 +22,7 @@ const App: React.FC = () => {
         <ContactSection />
       </main>
 
-      <footer className="py-4 text-center text-muted text-sm">
+      <footer className="py-4 text-center text-muted text-sm bg-neutral-300">
         <p className="px-20">© {new Date().getFullYear()} Jolanta Dominiak-Konderak | Wszelkie prawa zastrzeżone</p>
       </footer>
     </div>

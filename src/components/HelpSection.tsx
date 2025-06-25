@@ -11,12 +11,9 @@ const helpItems = [
 ];
 
 const HelpSection = () => (
-  <Section id="help" title="OBSZARY POMOCY">
+  <Section id="help" title="OBSZARY POMOCY" bgClassName="bg-light">
     <div className="max-w-3xl mx-auto text-center">
       <h2 className="text-4xl md:text-5xl font-serif font-semibold text-[#3B200F] mb-10">
-        <span className="inline-block">
-          <span className="mx-1">✦</span> OBSZARY POMOCY: <span className="mx-1">✦</span>
-        </span>
       </h2>
       <div className="flex flex-col items-center">
         <div className="inline-flex flex-col min-w-[250px] max-w-full">
