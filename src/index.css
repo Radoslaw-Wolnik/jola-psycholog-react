@@ -9,6 +9,8 @@
   --color-brown-h2:         #492D1A;
   --color-background-main:  #F1EDE9;
   --color-background-accent:#D9DFD6;
+  --color-background-secondary: #D3D3C9;
+  --color-text-hover-accent: #6e3916;
 
   --color-card-one:         #F5F0DE;
   --color-card-two:         #D2D2CA;
@@ -28,7 +30,7 @@
   --scale-100: 1;
 
   /* BREAKPOINTS */
-  --breakpoint-xsm: 200px;
+  --breakpoint-xsm: 540px;
 }
 
 
@@ -40,7 +42,46 @@
 
   p {
     font-family: var(--font-text);
-    color: var(--color-black-p)
+    color: var(--color-black-p);
   }
 
+  h {
+    font-family: var(--font-headers);
+    color: var(--color-brown-h2);
+  }
+
+}
+
+@layer utilities {
+  .bg-gradient-bottom-fade {
+    background: linear-gradient(to bottom, var(--color-background-main) 60%, var(--color-background-secondary) 100%);
+  }
+
+  .bg-gradient-top-fade {
+    background: linear-gradient(to bottom, var(--color-background-secondary) 60%, var(--color-background-main) 100%);
+  }
+
+  .bg-gradient-to-contact {
+    background: linear-gradient(to bottom, var(--color-background-main) 60%, #E7E2CE 100%);
+  }
+}
+
+
+
+@layer utilities {
+  /* Color section: 80% solid color, 20% fade to white */
+  .bg-gradient-color {
+    background: linear-gradient(to top,
+      white 100%,                 /* End with white */
+      var(--color-background-main) 80%  /* Start fade here */
+    );
+  }
+
+  /* White section: 60% solid white, 40% fade to color */
+  .bg-gradient-white {
+    background: linear-gradient(to top,
+      var(--color-background-main) 100%,  /* End with color */
+      white 60%                        /* Start fade here */
+    );
+  }
 }

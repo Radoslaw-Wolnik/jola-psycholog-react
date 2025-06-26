@@ -2,32 +2,35 @@
 import Section from './Section.tsx';
 
 const AboutSection = () => (
-  <Section id="about" title="O MNIE" bgClassName="bg-background-main">
+  <Section id="about" title="O MNIE" bgClassName="bg-gradient-bottom-fade">
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 items-center w-auto">
-      {/* Image */}
-      <div className="flex justify-center md:justify-start">
-        <img 
-          src="jola_portret.jpg" 
-          alt="Zdjęcie Joli na fotelu"
-          className="w-2/3  sm:w-auto h-auto rounded-2xl" 
-        />
+    <div className="grid grid-cols-1 xsm:grid-cols-2 sm:grid-cols-2 [@media(min-width:880px)]:grid-cols-3 gap-6 w-auto">
+
+      {/* Image - with proper dimensions */}
+      <div className="block xsm:relative overflow-hidden h-full">
+        <div className="inline-flex justify-center xsm:absolute xsm:inset-0">
+          <img 
+            src="jola_portret_round_corners.png" 
+            alt="Zdjęcie Joli na fotelu"
+            className="w-2/3 xsm:w-auto xsm:h-full object-contain rounded-2xl"
+          />
+        </div>
       </div>
 
       {/* Heading */}
-      <div className="text-center md:text-left flex flex-col justify-center gap-4">
+      <div className="text-center md:text-left flex flex-col gap-4">
         <h1 className="text-2xl md:text-3xl font-bold text-secondary">
           Nazywam się Jolanta Dominiak-Konderak<br /> jestem psycholożką
         </h1>
         <blockquote className="italic text-lg text-center md:text-left mb-4 text-dark font-text">
           "Wierzę, że każdy z Nas ma w sobie zasoby, by odnaleźć drogę do własnego 
-          dobrostanu. Moją rolą jest towarzyszenie Ci w tej podróży – bez oceniania, 
+          dobrostanu. Moją rolą jest towarzyszenie Ci w tej podróży - bez oceniania, 
           z pełną akceptacją i uważnością na to, kim jesteś."
         </blockquote>
       </div>
 
       {/* Main text */}
-      <div className="prose prose-lg max-w-none text-dark sm:col-span-2 md:col-span-1 font-text">
+      <div className="prose prose-lg max-w-none text-dark xsm:col-span-2 md:col-span-2 [@media(min-width:880px)]:col-span-1 font-text">
         <p>
           Jestem psycholożką, absolwentką psychologii Uniwersytetu Opolskiego 
           o specjalności klinicznej człowieka dorosłego. W toku studiów oraz dalszej 

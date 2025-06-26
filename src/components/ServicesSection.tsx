@@ -16,13 +16,21 @@ const ServiceCard = ({
 }: ServiceCardProps) => (
   <div
     className={clsx(
-      'bg-light rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow text-center h-full',
+      'bg-light rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow text-center h-full relative',
       className,
     )}
   >
-    <div className="text-3xl font-bold text-primary mb-4">{number}</div>
-    <h3 className="text-xl font-bold text-secondary mb-3">{title}</h3>
-    <p className="text-dark">{description}</p>
+    {/* Modified number container */}
+    <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <div className="text-3xl font-bold text-primary bg-light rounded-full w-12 h-12 flex items-center justify-center shadow-sm">
+        {number}
+      </div>
+    </div>
+    {/* */}
+    <div className="pt-2"> {/* Added top padding to content */}
+      <h3 className="text-xl font-bold text-secondary mb-3">{title}</h3>
+      <p className="text-dark">{description}</p>
+    </div>
   </div>
 );
 
@@ -42,7 +50,7 @@ const ImageCard = ({
       className,
     )}
   >
-    <div className="absolute inset-0 w-full h-full rounded-md">
+    <div className="absolute inset-0 w-full h-full">
       <img 
         src={url}
         alt={alt}
@@ -53,7 +61,7 @@ const ImageCard = ({
 );
 
 const ServicesSection = () => (
-  <Section id="services" className="bg-light" title="OFERUJĘ">
+  <Section id="services" className="bg-light" title="OFERUJĘ" bgClassName="bg-gradient-top-fade">
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {/* Image1 */}
       <ImageCard

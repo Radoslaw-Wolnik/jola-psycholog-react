@@ -62,7 +62,7 @@ const Header = () => {
                 <li key={item.id}>
                   <a
                     href={`#${item.id}`}
-                    className="text-dark hover:text-primary transition-colors font-medium text-sm whitespace-nowrap px-2"
+                    className="text-dark hover:text-text-hover-accent transition-colors font-medium text-sm whitespace-nowrap px-2"
                   >
                     {item.name}
                   </a>
@@ -119,7 +119,7 @@ const Header = () => {
               <li key={item.id}>
                 <a
                   href={`#${item.id}`}
-                  className="block text-dark hover:text-primary transition-colors font-medium py-1"
+                  className="block text-dark hover:text-text-hover-accent transition-colors font-medium py-1"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}

@@ -24,7 +24,7 @@ const OfficeCard = ({
 );
 
 const OfficeSection = () => (
-  <Section id="office" title="GABINET">
+  <Section id="office" title="GABINET" bgClassName="bg-gradient-to-contact">
     <div className="prose prose-lg max-w-none text-dark">
       
 

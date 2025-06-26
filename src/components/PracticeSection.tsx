@@ -2,7 +2,7 @@
 import Section from './Section.tsx';
 
 const PracticeSection = () => (
-  <Section id="practice" title="PRAKTYKA" bgClassName="bg-background-main">
+  <Section id="practice" title="PRAKTYKA" bgClassName="bg-gradient-bottom-fade">
     <div className="prose prose-lg max-w-none text-dark">
       <p>
         Bazą jest bezpieczna relacja terapeutyczna.
@@ -11,7 +11,7 @@ const PracticeSection = () => (
       <p>
         Pracuję w atmosferze zaufania i autentyczności, tworząc przestrzeń, w której 
         możesz być sobą. W trakcie spotkań skupimy się na tym, co dzieje się w Twoim 
-        życiu tu i teraz – zarówno w umyśle, jak i w ciele. Dzięki temu masz szansę 
+        życiu tu i teraz - zarówno w umyśle, jak i w ciele. Dzięki temu masz szansę 
         przyjrzeć się swoim emocjom, przekonaniom i relacjom w nowym świetle, rozpoznać, 
         co Cię wspiera a co ogranicza. Nie analizujemy wyłącznie przeszłości, lecz 
         badamy, jak wpływa ona na Twoje obecne wybory i sposób przeżywania rzeczywistości.

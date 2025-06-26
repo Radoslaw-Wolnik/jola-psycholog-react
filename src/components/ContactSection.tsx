@@ -36,7 +36,7 @@ const ContactSection: React.FC = () => (
           <Mail className="w-5 h-5 flex-shrink-0" />
           <a
             href="mailto:kontakt@wrelacji.com"
-            className="hover:text-accent transition-colors"
+            className="hover:text-text-hover-accent transition-colors"
           >
             kontakt@wrelacji.com
           </a>
@@ -45,7 +45,7 @@ const ContactSection: React.FC = () => (
           <Phone className="w-5 h-5 flex-shrink-0" />
           <a
             href="tel:+48690328246"
-            className="hover:text-accent transition-colors"
+            className="hover:text-text-hover-accent transition-colors"
           >
             +48 690 328 246
           </a>
@@ -56,7 +56,7 @@ const ContactSection: React.FC = () => (
             href="https://instagram.com/jolanta_psychology"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-accent transition-colors"
+            className="hover:text-text-hover-accent transition-colors"
           >
             @jolanta_psychology
           </a>
