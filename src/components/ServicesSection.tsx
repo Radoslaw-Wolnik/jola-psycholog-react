@@ -22,14 +22,14 @@ const ServiceCard = ({
   >
     {/* Modified number container */}
     <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-      <div className="text-3xl font-bold text-primary bg-light rounded-full w-12 h-12 flex items-center justify-center shadow-sm">
+      <div className="text-3xl font-header2 text-black-p bg-light rounded-full w-12 h-12 flex items-center justify-center shadow-sm">
         {number}
       </div>
     </div>
     {/* */}
     <div className="pt-2"> {/* Added top padding to content */}
-      <h3 className="text-xl font-bold text-secondary mb-3">{title}</h3>
-      <p className="text-dark">{description}</p>
+      <h3 className="text-xl font-header2 text-black-p mb-3">{title}</h3>
+      <p className="text-black-p">{description}</p>
     </div>
   </div>
 );
@@ -66,7 +66,7 @@ const ServicesSection = () => (
       {/* Image1 */}
       <ImageCard
         url="card_forest.jpg"
-        alt="photo"
+        alt="photo of a coniferous forest with mist on mountain"
         className="md:order-2 lg:order-1"
       />
       
@@ -80,8 +80,8 @@ const ServicesSection = () => (
       
       {/* Image2 */}
       <ImageCard
-        url="card_laptop.jpg"
-        alt="photo"
+        url="card-laptop.png"
+        alt="photo of an opened laptop on desk turned back during sunset"
         className="md:order-3 lg:order-3"
       />
 
@@ -95,8 +95,8 @@ const ServicesSection = () => (
       
       {/* Image3 */}
       <ImageCard
-        url="card_water.jpg"
-        alt="photo"
+        url="card-water.png"
+        alt="photo of water surface with sun reflections on waves"
         className="md:order-6 lg:order-5"
       />
       

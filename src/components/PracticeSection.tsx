@@ -17,7 +17,7 @@ const PracticeSection = () => (
         badamy, jak wpływa ona na Twoje obecne wybory i sposób przeżywania rzeczywistości.
       </p>
       
-      <p className="mt-8">
+      <p className="mt-4">
         Jestem pełna ciekawości, jak przeszłe doświadczenia ukształtowały Ciebie i jak 
         możemy wspólnie nadać im kierunek, by stały się źródłem wzrostu oraz siły. 
         Wspólnie pracujemy na tym co dla Ciebie trudne, jak również wzmacniamy to co 
@@ -33,7 +33,7 @@ const PracticeSection = () => (
         klienta w drodze do odzyskania harmonii psychofizycznej.
       </p>
       
-      <p className="mt-8">
+      <p className="mt-4">
         Swoją pracę poddaje stałej superwizji. Kieruję się Kodeksem Etyczno-Zawodowym Psychologa.
       </p>
     </div>

@@ -13,14 +13,12 @@ const helpItems = [
 const HelpSection = () => (
   <Section id="help" title="OBSZARY POMOCY" bgClassName="bg-gradient-top-fade">
     <div className="max-w-3xl mx-auto text-center">
-      <h2 className="text-4xl md:text-5xl font-serif font-semibold text-[#3B200F] mb-10">
-      </h2>
       <div className="flex flex-col items-center">
         <div className="inline-flex flex-col min-w-[250px] max-w-full">
           {helpItems.map((item, index) => (
             <div
               key={index}
-              className="border-1 border-black px-12 py-1 rounded-sm text-lg hover:shadow-lg transition-shadow mb-4 last:mb-0 text-center break-words"
+              className="font-text text-black-p border-1 border-black px-12 py-1 rounded-sm text-lg hover:shadow-lg transition-shadow mb-4 last:mb-0 text-center break-words"
             >
               {item}
             </div>

@@ -18,7 +18,7 @@ const OfficeCard = ({
       className,
     )}
   >
-    <h3 className="text-xl font-bold text-secondary mb-3">{title}</h3>
+    <h3 className="text-xl font-header2 text-black-p mb-3">{title}</h3>
     <p className="text-dark">{description}</p>
   </div>
 );

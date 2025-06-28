@@ -38,25 +38,26 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
-      <div className="container mx-auto px-4">
+      <div className="w-full px-4">
         {/* Desktop Header */}
-        <div className="hidden md:flex justify-between items-center py-4">
+        <div className="hidden md:flex md:justify-between items-center py-2">
           {/* Left: Logo and Text */}
-          <div className="flex flex-row items-center gap-4" >
-            <img 
-              src="logo_only_horisontal.png" 
-              alt="W Realcji"
-              className="h-auto w-auto max-w-[160px]" // Adjust height as needed
-            />
-            <img 
-              src="jolanta.png" 
-              alt="Jolanta Dominiak-Konderak"
-              className="h-auto w-auto max-w-[160px]" // Adjust height as needed
-            />
+          
+          <div className="flex flex-row gap-3 self-start items-end">
+            {/* logo + title */}
+            <img src="logo-no-bg.png" alt="W Relacji logo" className={`h-8 md:h-16`} />
+            <div className="hidden min-[890px]:flex flex-col text-center">
+              <h2 className={`text-black-p text-sm font-logo`}>
+                JOLANTA DOMINIAK-KONDERAK
+              </h2>
+              <p className={`text-black-p/90 text-sm`}>
+                PSYCHOLOG
+              </p>
+            </div>
           </div>
           
           {/* Right: Desktop Navigation - HORIZONTAL LAYOUT */}
-          <nav>
+          <nav className="justify-end">
             <ul className="flex flex-row flex-nowrap justify-end list-none p-0 m-0">
               {navItems.map(item => (
                 <li key={item.id}>
@@ -74,19 +75,22 @@ const Header = () => {
         </div>
         
         {/* Mobile Header */}
-        <div className="md:hidden flex justify-between items-center py-4">
+        <div className="md:hidden flex justify-between items-center">
           {/* Left: Logo */}
-          <div className="flex flex-row items-center gap-4" >
+          <div className="flex flex-row items-center xsm:gap-4" >
             <img 
-              src="logo_only_horisontal.png" 
-              alt="W Realcji"
+              src="logo-no-bg.png" 
+              alt="W Realcji logo"
               className="h-auto w-auto max-w-[160px]" // Adjust height as needed
             />
-            <img 
-              src="jolanta.png" 
-              alt="Jolanta Dominiak-Konderak"
-              className="h-auto w-auto max-w-[160px]" // Adjust height as needed
-            />
+            <div className="text-center">
+              <h2 className="text-black-p xsm:text-sm text-xs font-logo">
+                JOLANTA DOMINIAK-KONDERAK
+              </h2>
+              <p className="text-black-p/90 xsm:text-sm text-xs">
+                PSYCHOLOG
+              </p>
+            </div>
           </div>
           
           {/* Right: Hamburger Menu */}

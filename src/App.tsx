@@ -7,6 +7,7 @@ import PracticeSection from './components/PracticeSection.tsx';
 import HelpSection from './components/HelpSection.tsx';
 import OfficeSection from './components/OfficeSection.tsx';
 import ContactSection from './components/ContactSection.tsx';
+import HeroSection from './components/HeroSection.tsx';
 
 const App: React.FC = () => {
   return (
@@ -14,6 +15,7 @@ const App: React.FC = () => {
       <Header />
       
       <main className="">
+        <HeroSection />
         <AboutSection />
         <ServicesSection />
         <PracticeSection />

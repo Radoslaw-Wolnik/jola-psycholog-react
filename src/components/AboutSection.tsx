@@ -19,9 +19,10 @@ const AboutSection = () => (
 
       {/* Heading */}
       <div className="text-center md:text-left flex flex-col gap-4">
-        <h1 className="text-2xl md:text-3xl font-bold text-secondary">
+        <h1 className="text-2xl md:text-3xl font-header2 text-black-p text-center">
           Nazywam się Jolanta Dominiak-Konderak<br /> jestem psycholożką
         </h1>
+        <div className="pt-2"></div>
         <blockquote className="italic text-lg text-center md:text-left mb-4 text-dark font-text">
           "Wierzę, że każdy z Nas ma w sobie zasoby, by odnaleźć drogę do własnego 
           dobrostanu. Moją rolą jest towarzyszenie Ci w tej podróży - bez oceniania, 
@@ -37,6 +38,7 @@ const AboutSection = () => (
           edukacji zdobyłam wymagane kompetencje do pracy w obszarze pomocy oraz 
           diagnozy psychologicznej.
         </p>
+        <div className="pt-2"></div>
         <p>
           Ukończyłam także kurs Racjonalnej Terapii Zachowania oraz Interwencji 
           Kryzysowej, co pozwala mi prowadzić interwencje dla osób w trudnych 

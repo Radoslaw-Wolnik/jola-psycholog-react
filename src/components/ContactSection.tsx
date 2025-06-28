@@ -1,7 +1,6 @@
 // src/components/ContactSection.tsx
 import React from "react";
 import Section from "./Section";
-import Logo from "../assets/logo.png";
 import { Mail, Phone, Instagram } from "lucide-react";
 
 const ContactSection: React.FC = () => (
@@ -16,20 +15,24 @@ const ContactSection: React.FC = () => (
     <div className="absolute inset-0 bg-black/25" />*/}
 
     {/* content */}
-    <div className="relative z-10 max-w-6xl mx-auto px-6 py-12 flex flex-col items-center">
-      <div className="flex flex-row gap-3 self-start">
-        {/* logo + title */}
-        <img src={Logo} alt="W Relacji logo" className="h-12 md:h-16 mb-4" />
+    <div className="relative z-10 max-w-6xl mx-auto px-6 py-12 flex flex-col items-start">
+      {/* Left: Logo */}
+      <div className="flex flex-row items-end" >
+        <img 
+          src="logo-no-bg.png" 
+          alt="W Realcji logo"
+          className="h-16 md:h-24 lg:h-32 w-auto " // Adjust height as needed
+        />
         <div className="text-center">
-          <h2 className="text-black_p text-2xl md:text-3xl font-semibold">
+          <h2 className="text-black-p xsm:text-sm text-xs font-logo">
             JOLANTA DOMINIAK-KONDERAK
           </h2>
-          <p className="text-black_p/90 text-lg md:text-xl mb-8">
+          <p className="text-black-p/90 xsm:text-sm text-xs">
             PSYCHOLOG
           </p>
         </div>
       </div>
-
+      <div className="pt-4"></div>
       {/* contact links, right-aligned */}
       <ul className="w-full md:w-1/3 self-start space-y-4 text-black_p text-base md:text-lg text-right">
         <li className="flex items-center justify-start space-x-2">

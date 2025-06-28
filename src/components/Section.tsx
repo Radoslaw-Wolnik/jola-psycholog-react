@@ -53,7 +53,7 @@ const Section: React.FC<SectionProps> = ({
       {/* Content wrapper */}
       <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 py-4 lg:py-8 rounded-xl">
         {title && (
-          <h2 className="text-3xl md:text-4xl font-bold mb-10 text-center text-secondary font-headers text-brown-h2">
+          <h2 className="text-3xl md:text-4xl mb-10 text-center font-header1 text-brown-text">
             {title}
           </h2>
         )}

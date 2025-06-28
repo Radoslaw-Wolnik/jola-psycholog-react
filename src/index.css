@@ -1,12 +1,37 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'Catchy Mager';
+  src: url('/fonts/catchy-mager.otf') format('otf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'The Seasons bold';
+  src: url('/fonts/the-seasons-bd.otf') format('otf');
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'The Seasons';
+  src: url('/fonts/the-seasons-reg.otf') format('otf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 /* —————————————————————————————————————————————— */
 /*              Tailwind “theme” overrides        */
 /* —————————————————————————————————————————————— */
 @theme {
   /* COLORS (snake_case → kebab-case) */
   --color-black-p:          #253439;
-  --color-brown-h2:         #492D1A;
+  --color-brown-text:         #492D1A;
   --color-background-main:  #F1EDE9;
   --color-background-accent:#D9DFD6;
   --color-background-secondary: #D3D3C9;
@@ -17,8 +42,21 @@
   --color-card-three:       #D6D3B5;
 
   /* FONT FAMILIES */
-  --font-headers: Cinzel, ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-  --font-text:    "Lora", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-header1:
+    'Catchy Mager',
+    serif;
+  
+  --font-header2:
+    'The Seasons bold',
+    serif;
+  
+  --font-logo:
+    'Times New Roman',
+    serif;
+
+  --font-text:
+    'Cormorant Garamond',
+    serif;
 
   /* CONTAINER */
   --container-center:       true;
@@ -45,9 +83,14 @@
     color: var(--color-black-p);
   }
 
+  a {
+    font-family: var(--font-text);
+    color: var(--color-black-p);
+  }
+
   h {
-    font-family: var(--font-headers);
-    color: var(--color-brown-h2);
+    font-family: var(--font-header1);
+    color: var(--color-brown-text);
   }
 
 }
@@ -67,21 +110,3 @@
 }
 
 
-
-@layer utilities {
-  /* Color section: 80% solid color, 20% fade to white */
-  .bg-gradient-color {
-    background: linear-gradient(to top,
-      white 100%,                 /* End with white */
-      var(--color-background-main) 80%  /* Start fade here */
-    );
-  }
-
-  /* White section: 60% solid white, 40% fade to color */
-  .bg-gradient-white {
-    background: linear-gradient(to top,
-      var(--color-background-main) 100%,  /* End with color */
-      white 60%                        /* Start fade here */
-    );
-  }
-}
