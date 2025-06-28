@@ -1,54 +1,66 @@
-# React + TypeScript + Vite
+# Psychologist Website for Jolanta Dominiak-Konderak
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a professional one-page portfolio and business website developed for **Jolanta Dominiak-Konderak**, a licensed psychologist. The site is intended **solely for commercial use by the client** and is shared here **only with the owner's permission for educational and portfolio purposes**.
 
-Currently, two official plugins are available:
+For more details, see [License](#-license-and-usage) and the included `License.txt`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🧠 About the Project
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This is a **clean, responsive, and minimalist single-page website**, structured into distinct sections navigated via internal links.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+The site was developed with a **modular approach**, where each section (e.g. `HeroSection`, `ServicesSection`, `ContactSection`) is treated as a self-contained component. Given the simplicity of the project, some smaller reusable components like `ImageCard` are defined and used directly within their parent files.
+
+---
+
+## 🛠️ Stack
+
+* [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+* [Vite](https://vitejs.dev/)
+* [Tailwind CSS](https://tailwindcss.com/)
+
+---
+
+## 💡 Highlights & Notes
+
+This project marks several personal firsts and learning experiences:
+
+* 🔹 **First project using Tailwind CSS in React**:
+  The experience was positive overall, although setting up Tailwind v4.1 presented some challenges due to outdated tutorials. Notably, the newer **"CSS-first" approach** (no `tailwind.config.ts`) meant managing styles in `index.css` directly.
+
+* 🔹 **Responsive design** with Tailwind's breakpoint utilities (e.g. `text-lg sm:text-xl lg:text-2xl`) was intuitive and enjoyable—much easier than using traditional `@media` queries.
+
+* 🔹 **Basic SEO implementation**:
+  Meta tags such as `description`, Open Graph, and Twitter cards are added to `index.html`. A `<script type="application/ld+json">` block is also included to improve Google search preview (structured data for rich results).
+
+* 🔹 **Strict TypeScript configuration** (`tsconfig.json`) enforces strong typing and clean code, which made deployment easier by reducing runtime and build-time errors.
+
+> 💬 *Note:* In earlier projects with relaxed rules, deployment (especially to [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/)) became problematic due to issues like unused imports and inconsistent typing. This stricter setup helps avoid those headaches.
+
+---
+
+## 🚀 Deployment
+
+To run the project locally:
+
+```bash
+git clone https://github.com/Radoslaw-Wolnik/jola-psycholog-react.git
+cd jola-psycholog-react
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+> ⚠️ Please **do not use this project** for commercial purposes or without explicit authorization.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 📄 License and Usage
+
+This website was developed by [Radosław Wolnik](https://github.com/Radoslaw-Wolnik) as a commissioned project for **Jolanta Dominiak-Konderak**, a licensed psychologist.
+
+* 🔒 **Not for commercial reuse.**
+* 👨‍💻 **Educational and portfolio use only.**
+* ✅ You may review or reference the code for learning purposes.
+
+Please respect the ownership rights of the client.
