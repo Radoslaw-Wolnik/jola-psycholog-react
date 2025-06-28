@@ -4,7 +4,7 @@ const structuredData: object[] = [
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "W Relacji – Psychologia z Jolantą Dominiak-Konderak",
+    name: "W Relacji - Psychologia z Jolantą Dominiak-Konderak",
     url: "https://wrelacji.com/",
     potentialAction: {
       "@type": "SearchAction",
@@ -16,7 +16,7 @@ const structuredData: object[] = [
     "@context": "https://schema.org",
     "@type": "WebPage",
     url: "https://wrelacji.com/",
-    name: "W Relacji – Psycholog online i stacjonarnie",
+    name: "W Relacji - Psycholog online i stacjonarnie",
     description: "Psycholog Jolanta Dominiak-Konderak: konsultacje, terapia i mentoring w nurcie ACT, RTZ, Gestalt."
   },
   {
@@ -107,7 +107,7 @@ const structuredData: object[] = [
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "W Relacji – Gabinet Psychologiczny",
+    name: "W Relacji - Gabinet Psychologiczny",
     url: "https://wrelacji.com/#office",
     telephone: "+48690328246",
     address: {

@@ -19,5 +19,24 @@
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
-  <!-- repeat for #practice, #help, #office, #contact -->
+  <url>
+    <loc>https://wrelacji.com/#practice</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://wrelacji.com/#help</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://wrelacji.com/#office</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://wrelacji.com/#contact</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>
