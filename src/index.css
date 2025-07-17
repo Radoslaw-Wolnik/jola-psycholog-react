@@ -30,12 +30,12 @@
 /* —————————————————————————————————————————————— */
 @theme {
   /* COLORS (snake_case → kebab-case) */
-  --color-black-p:          #253439;
-  --color-brown-text:         #492D1A;
+  --color-black-p:          #172124;
+  --color-brown-text:         #2e1a0d;
   --color-background-main:  #F1EDE9;
   --color-background-accent:#D9DFD6;
   --color-background-secondary: #D3D3C9;
-  --color-text-hover-accent: #6e3916;
+  --color-text-hover-accent: #a67758;
 
   --color-card-one:         #F5F0DE;
   --color-card-two:         #D2D2CA;
@@ -70,6 +70,7 @@
   /* BREAKPOINTS */
   --breakpoint-xsm: 540px;
 }
+
 
 
 @layer base {
@@ -107,6 +108,16 @@
   .bg-gradient-to-contact {
     background: linear-gradient(to bottom, var(--color-background-main) 60%, #E7E2CE 100%);
   }
+
+  .text-shadow-strong {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  }
+
+  .super-subtle-blur {
+    backdrop-filter: blur(0.5px);
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
 }
 
 
