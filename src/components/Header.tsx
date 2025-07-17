@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { Mail, Phone, Instagram } from "lucide-react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +32,6 @@ const Header = () => {
     { name: 'O MNIE', id: 'about' },
     { name: 'OFERTA', id: 'services' },
     { name: 'PRAKTYKA', id: 'practice' },
-    { name: 'OBSZARY POMOCY', id: 'help' },
     { name: 'GABINET', id: 'office' },
     { name: 'KONTAKT', id: 'contact' },
   ];
@@ -46,7 +46,7 @@ const Header = () => {
           <div className="flex flex-row gap-3 self-start items-end">
             {/* logo + title */}
             <img src="logo-no-bg.png" alt="W Relacji logo" className={`h-8 md:h-16`} />
-            <div className="hidden min-[890px]:flex flex-col text-center">
+            <div className="hidden min-[970px]:flex flex-col text-center">
               <h2 className={`text-black-p text-sm font-logo`}>
                 JOLANTA DOMINIAK-KONDERAK
               </h2>
@@ -58,17 +58,44 @@ const Header = () => {
           
           {/* Right: Desktop Navigation - HORIZONTAL LAYOUT */}
           <nav className="justify-end">
-            <ul className="flex flex-row flex-nowrap justify-end list-none p-0 m-0">
+            <ul className="flex flex-row flex-nowrap justify-end list-none gap-4 m-0 items-center">
               {navItems.map(item => (
                 <li key={item.id}>
                   <a
                     href={`#${item.id}`}
-                    className="text-dark hover:text-text-hover-accent transition-colors font-medium text-sm whitespace-nowrap px-2"
+                    className="text-dark hover:text-text-hover-accent transition-colors font-text text-md whitespace-nowrap"
                   >
                     {item.name}
                   </a>
                 </li>
               ))}
+              {/* socials + contact */}
+              <li>
+                <a
+                  href="mailto:kontakt@wrelacji.com"
+                  className="hover:text-text-hover-accent transition-colors"
+                >
+                  <Mail className="w-5 h-5 flex-shrink-0" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:+48690328246"
+                  className="hover:text-text-hover-accent transition-colors"
+                >
+                  <Phone className="w-5 h-5 flex-shrink-0" />
+                </a>
+              </li>
+              <li>
+                <a
+                href="https://instagram.com/jolanta_psychology"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-text-hover-accent transition-colors"
+                >
+                  <Instagram className="w-5 h-5 flex-shrink-0" />
+                </a>
+              </li>
             </ul>
           </nav>
 
@@ -83,15 +110,47 @@ const Header = () => {
               alt="W Realcji logo"
               className="h-auto w-auto max-w-[160px]" // Adjust height as needed
             />
-            <div className="text-center">
-              <h2 className="text-black-p xsm:text-sm text-xs font-logo">
+            <div className="hidden min-[560px]:flex flex-col text-center">
+              <h2 className="text-black-p text-xs xsm:text-xs  font-logo">
                 JOLANTA DOMINIAK-KONDERAK
               </h2>
-              <p className="text-black-p/90 xsm:text-sm text-xs">
+              <p className="text-black-p/90 text-xs xsm:text-xs ">
                 PSYCHOLOG
               </p>
             </div>
           </div>
+
+          {/* socials + contact */}
+          <nav className="justify-end">
+            <ul className="flex flex-row flex-nowrap justify-end list-none gap-4 m-0 items-center">
+              <li>
+                <a
+                  href="mailto:kontakt@wrelacji.com"
+                  className="hover:text-text-hover-accent transition-colors"
+                >
+                  <Mail className="w-5 h-5 flex-shrink-0" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:+48690328246"
+                  className="hover:text-text-hover-accent transition-colors"
+                >
+                  <Phone className="w-5 h-5 flex-shrink-0" />
+                </a>
+              </li>
+              <li>
+                <a
+                href="https://instagram.com/jolanta_psychology"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-text-hover-accent transition-colors"
+                >
+                  <Instagram className="w-5 h-5 flex-shrink-0" />
+                </a>
+              </li>
+            
+          
           
           {/* Right: Hamburger Menu */}
           <button 
@@ -106,6 +165,8 @@ const Header = () => {
               )}
             </svg>
           </button>
+          </ul>
+          </nav>
         </div>
       </div>
       
