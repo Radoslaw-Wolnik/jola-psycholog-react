@@ -34,33 +34,36 @@ const ContactSection: React.FC = () => (
       </div>
       <div className="pt-4"></div>
       {/* contact links, right-aligned */}
-      <ul className="w-full md:w-1/3 self-start space-y-4 text-black_p text-base md:text-lg text-right">
-        <li className="flex items-center justify-start space-x-2">
-          <Mail className="w-5 h-5 flex-shrink-0" />
+      <ul className="w-full md:w-1/3 self-start space-y-4 text-black_p text-base md:text-lg lg:text-xl text-right">
+        <li className="">
+          
           <a
             href="mailto:kontakt@wrelacji.com"
-            className="hover:text-text-hover-accent transition-colors"
+            className="hover:text-text-hover-accent transition-colors flex flex-row gap-2 items-center justify-start"
           >
+            <Mail className="w-5 h-5 flex-shrink-0" />
             kontakt@wrelacji.com
           </a>
         </li>
-        <li className="flex items-center justify-start space-x-2">
-          <Phone className="w-5 h-5 flex-shrink-0" />
+        <li className="">
+          
           <a
             href="tel:+48690328246"
-            className="hover:text-text-hover-accent transition-colors"
+            className="hover:text-text-hover-accent transition-colors flex flex-row gap-2 items-center justify-start"
           >
+            <Phone className="w-5 h-5 flex-shrink-0" />
             +48 690 328 246
           </a>
         </li>
-        <li className="flex items-center justify-start space-x-2">
-          <Instagram className="w-5 h-5 flex-shrink-0" />
+        <li className="">
+          
           <a
             href="https://instagram.com/jolanta_psychology"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-text-hover-accent transition-colors"
+            className="hover:text-text-hover-accent transition-colors flex flex-row gap-2 items-center justify-start"
           >
+            <Instagram className="w-5 h-5 flex-shrink-0" />
             @jolanta_psychology
           </a>
         </li>
