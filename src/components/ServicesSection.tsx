@@ -65,7 +65,7 @@ const ServicesSection = () => (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {/* Image1 */}
       <ImageCard
-        url="card_forest.jpg"
+        url="resized/card_forest.jpg"
         alt="photo of a coniferous forest with mist on mountain"
         className="md:order-2 lg:order-1"
       />
@@ -80,7 +80,7 @@ const ServicesSection = () => (
       
       {/* Image2 */}
       <ImageCard
-        url="card-laptop.png"
+        url="resized/card-laptop.png"
         alt="photo of an opened laptop on desk turned back during sunset"
         className="md:order-3 lg:order-3"
       />
@@ -95,7 +95,7 @@ const ServicesSection = () => (
       
       {/* Image3 */}
       <ImageCard
-        url="card-water.png"
+        url="resized/card-water.png"
         alt="photo of water surface with sun reflections on waves"
         className="md:order-6 lg:order-5"
       />

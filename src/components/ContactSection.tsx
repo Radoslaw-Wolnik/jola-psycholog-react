@@ -7,7 +7,7 @@ const ContactSection: React.FC = () => (
   <Section
     id="contact"
     className="overflow-hidden"
-    bgImageUrl="forest_bg_contact.jpg"
+    bgImageUrl="resized/forest_bg_contact.jpg"
     // overlayClassName="bg-black/25"
   >
 

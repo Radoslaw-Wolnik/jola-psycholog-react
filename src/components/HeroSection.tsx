@@ -6,7 +6,7 @@ const HeroSection: React.FC = () => (
   <Section
     id="hero"
     className="overflow-hidden"
-    bgImageUrl="forest_bg_hero.jpg"
+    bgImageUrl="resized/forest_bg_hero.jpg"
     // overlayClassName="bg-black/25"
   >
     {/* optional color overlay for contrast 
