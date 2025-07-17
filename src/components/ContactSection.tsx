@@ -24,10 +24,10 @@ const ContactSection: React.FC = () => (
           className="h-16 md:h-24 lg:h-32 w-auto " // Adjust height as needed
         />
         <div className="text-center">
-          <h2 className="text-black-p xsm:text-sm text-xs font-logo">
+          <h2 className="text-black-p text-tiny xsm:text-xs md:text-lg font-logo">
             JOLANTA DOMINIAK-KONDERAK
           </h2>
-          <p className="text-black-p/90 xsm:text-sm text-xs">
+          <p className="text-black-p/90 text-xs xsm:text-sm ">
             PSYCHOLOG
           </p>
         </div>
