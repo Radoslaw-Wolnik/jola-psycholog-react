@@ -24,9 +24,9 @@ const AboutSection = () => (
         </h1>
         <div className="pt-2"></div>
         <blockquote className="italic text-xl text-center md:text-left mb-4 text-dark font-text ">
-          "Wierzę, że każdy z Nas ma w sobie zasoby, by odnaleźć drogę do własnego 
+          „Wierzę, że każdy z Nas ma w sobie zasoby, by odnaleźć drogę do własnego 
           dobrostanu. Moją rolą jest towarzyszenie Ci w tej podróży - bez oceniania, 
-          z pełną akceptacją i uważnością na to, kim jesteś."
+          z pełną akceptacją i uważnością na to, kim jesteś.”
         </blockquote>
       </div>
 
