@@ -28,8 +28,8 @@ const ServiceCard = ({
     </div>
     {/* */}
     <div className="pt-2"> {/* Added top padding to content */}
-      <h3 className="text-xl font-header2 text-black-p mb-3">{title}</h3>
-      <p className="text-black-p">{description}</p>
+      <h3 className="text-xl md:text-2xl font-header2 text-black-p mb-3">{title}</h3>
+      <p className="text-black-p md:text-lg">{description}</p>
     </div>
   </div>
 );

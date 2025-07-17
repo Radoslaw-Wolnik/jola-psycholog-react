@@ -18,8 +18,8 @@ const OfficeCard = ({
       className,
     )}
   >
-    <h3 className="text-xl font-header2 text-black-p mb-3">{title}</h3>
-    <p className="text-dark">{description}</p>
+    <h3 className="text-xl lg:text-2xl font-header2 text-black-p mb-3">{title}</h3>
+    <p className="text-dark md:text-lg">{description}</p>
   </div>
 );
 
@@ -28,20 +28,23 @@ const OfficeSection = () => (
     <div className="prose prose-lg max-w-none text-dark">
 
       <div className="grid grid-cols-1 xsm:grid-cols-2 sm:grid-cols-2 gap-8 mt-12 items-center">
-        {/* 1. Intro text */}
-        <div className="xsm:col-span-2 sm:col-span-2">
-          <p>
-            Zapraszam Cię do mojego wirtualnego gabinetu. Prowadzę konsultacje i terapie 
-            psychologiczną online dla osób dorosłych. Sesje odbywają się za pośrednictwem 
-            platform do wideorozmów Zoom i GoogleMeets.
-          </p>
-        </div>
+        
 
         {/* Price box */}
-        <div>    
+        <div className="text-md md:text-lg lg:text-xl">
+
+          {/* 1. Intro text */}
+          <div className='mb-4'>
+            <p>
+              Zapraszam Cię do mojego wirtualnego gabinetu. Prowadzę konsultacje i terapie 
+              psychologiczną online dla osób dorosłych. Sesje odbywają się za pośrednictwem 
+              platform do wideorozmów Zoom i GoogleMeets.
+            </p>
+          </div>
+
           <div className="bg-light rounded-xl p-6 border-l-4 border-accent">
             <p className="font-bold text-lg mb-2">
-              <span className="text-accent">Koszt jednej sesji:</span> 150 zł
+              <span className="text-accent">Koszt jednej sesji:</span> 180 zł
             </p>
             <p>
               <span className="text-accent">Czas trwania:</span> 50 minut

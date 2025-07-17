@@ -31,14 +31,14 @@ const AboutSection = () => (
       </div>
 
       {/* Main text */}
-      <div className="prose prose-lg max-w-none text-dark xsm:col-span-2 md:col-span-2 [@media(min-width:880px)]:col-span-1 font-text text-xl">
+      <div className="prose max-w-none text-dark xsm:col-span-2 md:col-span-2 [@media(min-width:880px)]:col-span-1 font-text text-lg md:text-xl ">
         <p>
           Jestem psycholożką, absolwentką psychologii Uniwersytetu Opolskiego 
           o specjalności klinicznej człowieka dorosłego. W toku studiów oraz dalszej 
           edukacji zdobyłam wymagane kompetencje do pracy w obszarze pomocy oraz 
           diagnozy psychologicznej.
         </p>
-        <div className="pt-2"></div>
+        <div className="pt-4"></div>
         <p className=''>
           Ukończyłam także kurs Racjonalnej Terapii Zachowania oraz Interwencji 
           Kryzysowej, co pozwala mi prowadzić interwencje dla osób w trudnych 

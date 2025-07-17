@@ -18,7 +18,7 @@ const HelpSection = () => (
           {helpItems.map((item, index) => (
             <div
               key={index}
-              className="font-text text-black-p border-1 border-black px-12 py-1 rounded-sm text-lg hover:shadow-lg transition-shadow mb-4 last:mb-0 text-center break-words"
+              className="font-text text-black-p border-1 border-black px-12 py-1 rounded-sm text-lg md:text-xl hover:shadow-lg transition-shadow mb-4 last:mb-0 text-center break-words"
             >
               {item}
             </div>
