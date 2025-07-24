@@ -1,27 +1,20 @@
 @import "tailwindcss";
-
+/* i also have otf biut neither works */
 @font-face {
   font-family: 'Catchy Mager';
-  src: url('/fonts/catchy-mager.otf') format('otf');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+  src: url('fonts/catchy-mager.otf') format('opentype'); 
 }
 
 @font-face {
-  font-family: 'The Seasons bold';
-  src: url('/fonts/the-seasons-bd.otf') format('otf');
+  font-family: the-seasons, sans-serif;
+  font-style: normal;
   font-weight: 700;
-  font-style: bold;
-  font-display: swap;
 }
 
 @font-face {
-  font-family: 'The Seasons';
-  src: url('/fonts/the-seasons-reg.otf') format('otf');
-  font-weight: 400;
+  font-family: the-seasons, sans-serif;
   font-style: normal;
-  font-display: swap;
+  font-weight: 400;
 }
 
 
@@ -47,7 +40,7 @@
     serif;
   
   --font-header2:
-    'The Seasons bold',
+    thes-seasons,
     serif;
   
   --font-logo:
