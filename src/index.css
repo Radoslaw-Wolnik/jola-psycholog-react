@@ -5,19 +5,6 @@
   src: url('fonts/catchy-mager.otf') format('opentype'); 
 }
 
-@font-face {
-  font-family: the-seasons, sans-serif;
-  font-style: normal;
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: the-seasons, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-}
-
-
 /* —————————————————————————————————————————————— */
 /*              Tailwind “theme” overrides        */
 /* —————————————————————————————————————————————— */
@@ -39,9 +26,7 @@
     'Catchy Mager',
     serif;
   
-  --font-header2:
-    thes-seasons,
-    serif;
+  --font-header2: "lora", serif;
   
   --font-logo:
     'Times New Roman',
