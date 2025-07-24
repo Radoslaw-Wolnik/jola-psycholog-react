@@ -40,7 +40,7 @@ const structuredData: object[] = [
     image: "https://wrelacji.com/jola_portret_round_corners.png",
     description: "Psycholog Jolanta Dominiak-Konderak oferuje konsultacje i terapię online: Zoom, Google Meets.",
     telephone: "+48690328246",
-    email: "kontakt@wrelacji.com",
+    email: "kontakt.wrelacji@gmil.com",
     address: {
       "@type": "PostalAddress",
       streetAddress: "ul. Przykładowa 12",

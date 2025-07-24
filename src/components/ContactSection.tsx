@@ -38,11 +38,11 @@ const ContactSection: React.FC = () => (
         <li className="">
           
           <a
-            href="mailto:kontakt@wrelacji.com"
+            href="mailto:kontakt.wrelacji@gmil.com"
             className="hover:text-text-hover-accent transition-colors flex flex-row gap-2 items-center justify-start"
           >
             <Mail className="w-5 h-5 flex-shrink-0" />
-            kontakt@wrelacji.com
+            kontakt.wrelacji@gmail.com
           </a>
         </li>
         <li className="">

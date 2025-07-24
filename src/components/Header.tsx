@@ -72,7 +72,7 @@ const Header = () => {
               {/* socials + contact */}
               <li>
                 <a
-                  href="mailto:kontakt@wrelacji.com"
+                  href="mailto:kontakt.wrelacji@gmil.com"
                   className="hover:text-text-hover-accent transition-colors"
                 >
                   <Mail className="w-5 h-5 flex-shrink-0" />
@@ -125,7 +125,7 @@ const Header = () => {
             <ul className="flex flex-row flex-nowrap justify-end list-none gap-4 m-0 items-center">
               <li>
                 <a
-                  href="mailto:kontakt@wrelacji.com"
+                  href="mailto:kontakt.wrelacji@gmil.com"
                   className="hover:text-text-hover-accent transition-colors"
                 >
                   <Mail className="w-5 h-5 flex-shrink-0" />
