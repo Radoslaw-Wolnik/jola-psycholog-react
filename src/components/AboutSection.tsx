@@ -10,7 +10,7 @@ const AboutSection = () => (
       <div className="block xsm:relative overflow-hidden h-full">
         <div className="inline-flex justify-center xsm:absolute xsm:inset-0">
           <img 
-            src="resized/jola_portret_round_corners.png" 
+            src="jola_portret_round_corners.png" 
             alt="Zdjęcie Joli na fotelu"
             className="w-2/3 xsm:w-auto xsm:h-full object-contain rounded-2xl"
           />
