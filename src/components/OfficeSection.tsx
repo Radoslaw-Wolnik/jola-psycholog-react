@@ -55,7 +55,7 @@ const OfficeSection = () => (
         {/* Photo */}
         <div className="flex justify-center md:justify-start">
           <img
-            src="resized/jola_pracuje.jpg"
+            src="jola_pracuje.jpg"
             alt="Zdjęcie Joli w pracy"
             className="w-full h-auto object-cover rounded-2xl"
           />
