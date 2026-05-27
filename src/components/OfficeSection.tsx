@@ -25,13 +25,13 @@ const OfficeCard = ({
 
 const OfficeSection = () => (
   <Section id="office" title="GABINET" bgClassName="bg-gradient-to-contact">
-    <div className="prose prose-lg max-w-none text-dark">
+    <div className="max-w-none text-dark">
 
       <div className="grid grid-cols-1 xsm:grid-cols-2 sm:grid-cols-2 gap-8 mt-12 items-center">
         
 
         {/* Price box */}
-        <div className="text-md md:text-lg lg:text-xl">
+        <div className="text-base md:text-lg lg:text-xl">
 
           {/* 1. Intro text */}
           <div className='mb-4'>

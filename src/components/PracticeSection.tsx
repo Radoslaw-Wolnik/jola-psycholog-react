@@ -3,7 +3,7 @@ import Section from './Section.tsx';
 
 const PracticeSection = () => (
   <Section id="practice" title="PRAKTYKA" bgClassName="bg-gradient-bottom-fade">
-    <div className="prose text-lg md:text-xl max-w-none text-dark flex flex-col gap-4">
+    <div className="text-lg md:text-xl max-w-none text-dark flex flex-col gap-4">
       <p>
         Bazą jest bezpieczna relacja terapeutyczna.
       </p>

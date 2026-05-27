@@ -76,12 +76,4 @@
     backdrop-filter: blur(0.5px);
     background-color: rgba(0, 0, 0, 0.4);
   }
-
-  .text-black-p {
-    color: var(--color-black-p);
-  }
-
-  .font-logo {
-    font-family: var(--font-logo);
-  }
 }

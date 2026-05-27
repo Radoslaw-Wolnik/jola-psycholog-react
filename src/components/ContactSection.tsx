@@ -20,7 +20,7 @@ const ContactSection: React.FC = () => (
       <div className="flex flex-row items-end" >
         <img 
           src="logo-no-bg.png" 
-          alt="W Realcji logo"
+          alt="W Relacji logo"
           className="h-16 md:h-24 lg:h-32 w-auto " // Adjust height as needed
         />
         <div className="text-center">
@@ -34,11 +34,11 @@ const ContactSection: React.FC = () => (
       </div>
       <div className="pt-4"></div>
       {/* contact links, right-aligned */}
-      <ul className="w-full md:w-1/3 self-start space-y-4 text-black_p text-base md:text-lg lg:text-xl text-right">
+      <ul className="w-full md:w-1/3 self-start space-y-4 text-black-p text-base md:text-lg lg:text-xl text-right">
         <li className="">
           
           <a
-            href="mailto:kontakt.wrelacji@gmil.com"
+            href="mailto:kontakt.wrelacji@gmail.com"
             className="hover:text-text-hover-accent transition-colors flex flex-row gap-2 items-center justify-start"
           >
             <Mail className="w-5 h-5 flex-shrink-0" />

@@ -1,12 +1,14 @@
 import { useState, useEffect, useRef } from 'react';
-import { Mail, Phone, Instagram } from "lucide-react";
+import { Instagram, Mail, Menu, Phone, X } from 'lucide-react';
+
+const contactEmail = 'kontakt.wrelacji@gmail.com';
+const phoneHref = 'tel:+48690328246';
+const instagramUrl = 'https://instagram.com/jolanta_psychology';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement | null>(null);
 
-
-  // Close mobile menu when clicking outside
   useEffect(() => {
     if (!isOpen) return;
 
@@ -25,6 +27,22 @@ const Header = () => {
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
       document.removeEventListener('touchstart', handleClickOutside);
+    };
+  }, [isOpen]);
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('keydown', handleEscape);
+
+    return () => {
+      document.removeEventListener('keydown', handleEscape);
     };
   }, [isOpen]);
 
@@ -63,7 +81,7 @@ const Header = () => {
                 <li key={item.id}>
                   <a
                     href={`#${item.id}`}
-                    className="text-dark hover:text-text-hover-accent transition-colors font-text text-md whitespace-nowrap"
+                    className="text-dark hover:text-text-hover-accent transition-colors font-text text-base whitespace-nowrap"
                   >
                     {item.name}
                   </a>
@@ -72,26 +90,29 @@ const Header = () => {
               {/* socials + contact */}
               <li>
                 <a
-                  href="mailto:kontakt.wrelacji@gmil.com"
+                  href={`mailto:${contactEmail}`}
                   className="hover:text-text-hover-accent transition-colors"
+                  aria-label="Napisz email"
                 >
                   <Mail className="w-5 h-5 flex-shrink-0" />
                 </a>
               </li>
               <li>
                 <a
-                  href="tel:+48690328246"
+                  href={phoneHref}
                   className="hover:text-text-hover-accent transition-colors"
+                  aria-label="Zadzwoń"
                 >
                   <Phone className="w-5 h-5 flex-shrink-0" />
                 </a>
               </li>
               <li>
                 <a
-                href="https://instagram.com/jolanta_psychology"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-text-hover-accent transition-colors"
+                  href={instagramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-text-hover-accent transition-colors"
+                  aria-label="Instagram"
                 >
                   <Instagram className="w-5 h-5 flex-shrink-0" />
                 </a>
@@ -107,7 +128,7 @@ const Header = () => {
           <div className="flex flex-row items-center xsm:gap-4" >
             <img 
               src="logo-no-bg.png" 
-              alt="W Realcji logo"
+              alt="W Relacji logo"
               className="h-auto w-auto max-w-[160px]" // Adjust height as needed
             />
             <div className="hidden min-[560px]:flex flex-col text-center">
@@ -125,26 +146,29 @@ const Header = () => {
             <ul className="flex flex-row flex-nowrap justify-end list-none gap-4 m-0 items-center">
               <li>
                 <a
-                  href="mailto:kontakt.wrelacji@gmil.com"
+                  href={`mailto:${contactEmail}`}
                   className="hover:text-text-hover-accent transition-colors"
+                  aria-label="Napisz email"
                 >
                   <Mail className="w-5 h-5 flex-shrink-0" />
                 </a>
               </li>
               <li>
                 <a
-                  href="tel:+48690328246"
+                  href={phoneHref}
                   className="hover:text-text-hover-accent transition-colors"
+                  aria-label="Zadzwoń"
                 >
                   <Phone className="w-5 h-5 flex-shrink-0" />
                 </a>
               </li>
               <li>
                 <a
-                href="https://instagram.com/jolanta_psychology"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-text-hover-accent transition-colors"
+                  href={instagramUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-text-hover-accent transition-colors"
+                  aria-label="Instagram"
                 >
                   <Instagram className="w-5 h-5 flex-shrink-0" />
                 </a>
@@ -155,15 +179,13 @@ const Header = () => {
           {/* Right: Hamburger Menu */}
           <button 
             className="text-dark"
+            type="button"
+            aria-controls="mobile-menu"
+            aria-expanded={isOpen}
+            aria-label={isOpen ? 'Zamknij menu' : 'Otwórz menu'}
             onClick={() => setIsOpen(!isOpen)}
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              {isOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              )}
-            </svg>
+            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
           </ul>
           </nav>
@@ -172,6 +194,7 @@ const Header = () => {
       
       {/* Mobile menu dropdown */}
       <div
+        id="mobile-menu"
         ref={menuRef}
         className={`md:hidden fixed top-0 left-0 right-0 bg-white shadow-lg z-40 transform transition-all origin-top duration-300 ease-in-out ${
           isOpen ? 'scale-y-100 opacity-100' : 'scale-y-0 opacity-0 pointer-events-none'

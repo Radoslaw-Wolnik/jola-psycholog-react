@@ -31,7 +31,7 @@ const AboutSection = () => (
       </div>
 
       {/* Main text */}
-      <div className="prose max-w-none text-dark xsm:col-span-2 md:col-span-2 [@media(min-width:880px)]:col-span-1 font-text text-lg md:text-xl ">
+      <div className="max-w-none text-dark xsm:col-span-2 md:col-span-2 [@media(min-width:880px)]:col-span-1 font-text text-lg md:text-xl ">
         <p>
           Jestem psycholożką, absolwentką psychologii Uniwersytetu Opolskiego 
           o specjalności klinicznej człowieka dorosłego. W toku studiów oraz dalszej 

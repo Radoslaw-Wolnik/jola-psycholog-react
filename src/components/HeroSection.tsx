@@ -11,7 +11,7 @@ const HeroSection: React.FC = () => (
   >
     {/* optional color overlay for contrast 
     <div className="absolute inset-0 bg-black/25" />*/}
-    <div className="relative z-10 max-w-6xl mx-auto px-6 py-6 flex flex-col-reverse justyfy-end items-center text-center">
+    <div className="relative z-10 max-w-6xl mx-auto px-6 py-6 flex flex-col-reverse justify-end items-center text-center">
       <div className="super-subtle-blur p-2 rounded-lg">
         <h2 className={`text-white text-xl text-shadow-strong font-text italic `}>
           „To co leczy, to relacja - nie interpretacja”
