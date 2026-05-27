@@ -27,7 +27,7 @@ The site was developed with a **modular approach**, where each section (e.g. `He
 This project marks several personal firsts and learning experiences:
 
 * 🔹 **First project using Tailwind CSS in React**:
-  The experience was positive overall, although setting up Tailwind v4.1 presented some challenges due to outdated tutorials. Notably, the newer **"CSS-first" approach** (no `tailwind.config.ts`) meant managing styles in `index.css` directly.
+  The project uses the Tailwind v4 Vite plugin and the newer **"CSS-first" approach** (no `tailwind.config.ts`), with local theme tokens and custom utilities kept in `src/index.css`.
 
 * 🔹 **Responsive design** with Tailwind's breakpoint utilities (e.g. `text-lg sm:text-xl lg:text-2xl`) was intuitive and enjoyable—much easier than using traditional `@media` queries.
 
@@ -49,6 +49,12 @@ git clone https://github.com/Radoslaw-Wolnik/jola-psycholog-react.git
 cd jola-psycholog-react
 npm install
 npm run dev
+```
+
+To run the same validation used in CI:
+
+```bash
+npm run check
 ```
 
 > ⚠️ Please **do not use this project** for commercial purposes or without explicit authorization.
