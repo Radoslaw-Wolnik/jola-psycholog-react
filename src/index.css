@@ -1,57 +1,39 @@
 @import "tailwindcss";
-/* i also have otf biut neither works */
+
 @font-face {
   font-family: 'Catchy Mager';
-  src: url('fonts/catchy-mager.otf') format('opentype'); 
+  src: url('/fonts/catchy-mager.otf') format('opentype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
 }
 
-/* —————————————————————————————————————————————— */
-/*              Tailwind “theme” overrides        */
-/* —————————————————————————————————————————————— */
 @theme {
-  /* COLORS (snake_case → kebab-case) */
-  --color-black-p:          #172124;
-  --color-brown-text:         #2e1a0d;
-  --color-background-main:  #F1EDE9;
-  --color-background-accent:#D9DFD6;
+  --color-black-p: #172124;
+  --color-brown-text: #2e1a0d;
+  --color-background-main: #F1EDE9;
+  --color-background-accent: #D9DFD6;
   --color-background-secondary: #D3D3C9;
   --color-text-hover-accent: #a67758;
+  --color-card-one: #F5F0DE;
+  --color-card-two: #D2D2CA;
+  --color-card-three: #D6D3B5;
 
-  --color-card-one:         #F5F0DE;
-  --color-card-two:         #D2D2CA;
-  --color-card-three:       #D6D3B5;
+  --color-dark: var(--color-black-p);
+  --color-light: #F5F5F5;
+  --color-accent: var(--color-text-hover-accent);
+  --color-muted: #4f5b5f;
 
-  /* FONT FAMILIES */
-  --font-header1:
-    'Catchy Mager',
-    serif;
-  
-  --font-header2: "lora", serif;
-  
-  --font-logo:
-    'Times New Roman',
-    serif;
-
-  --font-text:
-    'Cormorant Garamond',
-    serif;
-  
+  --font-header1: 'Catchy Mager', serif;
+  --font-header2: 'Lora', serif;
+  --font-logo: 'Times New Roman', serif;
+  --font-text: 'Cormorant Garamond', serif;
   --text-tiny: 0.625rem;
 
-  /* CONTAINER */
-  --container-center:       true;
-  --container-padding:      1rem;
-  --container-md-padding:   2rem;
-
-  /* SCALE */
-  --scale-0:   0;
+  --scale-0: 0;
   --scale-100: 1;
-
-  /* BREAKPOINTS */
   --breakpoint-xsm: 540px;
 }
-
-
 
 @layer base {
   html {
@@ -59,21 +41,18 @@
     scroll-padding-top: 64px;
   }
 
-  p {
-    font-family: var(--font-text);
-    color: var(--color-black-p);
-  }
-
+  p,
   a {
     font-family: var(--font-text);
     color: var(--color-black-p);
   }
 
-  h {
+  h1,
+  h2,
+  h3 {
     font-family: var(--font-header1);
     color: var(--color-brown-text);
   }
-
 }
 
 @layer utilities {
@@ -105,7 +84,4 @@
   .font-logo {
     font-family: var(--font-logo);
   }
-
 }
-
-
